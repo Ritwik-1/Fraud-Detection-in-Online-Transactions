@@ -4,7 +4,9 @@
 
 ---
 
-## Project overview
+---
+
+## 🚀 Project Overview
 
 🔗 **Live minimal frontend demo:** [https://fraud-detection-api-mvmi.onrender.com/](https://fraud-detection-api-mvmi.onrender.com/)
 
@@ -15,7 +17,9 @@
 
 ---
 
-## Dataset & Features
+---
+
+## 📂 Dataset & Features
 
 **Target**
 
@@ -44,7 +48,9 @@
 
 ---
 
-## Architecture (High-level)
+---
+
+## 🏗 Architecture (High-level)
 
 1. **Data ingestion** — batch dataset for training; realtime events via REST.
 2. **Model training** — XGBoost (baseline). Saved as a model artifact.
@@ -53,7 +59,9 @@
 
 ---
 
-## API Usage (FastAPI)
+---
+
+## 🔌 API Usage (FastAPI)
 
 ### **POST /predict**
 
@@ -96,23 +104,25 @@ Send transaction metadata and receive fraud prediction.
 
 ---
 
-## Future Roadmap
+---
 
-### **1. Real-time monitoring dashboard**
+## 📈 Future Roadmap
+
+### 🔥 **1. Real-time monitoring dashboard**
 
 * Fraud trends
 * Peak fraud hours
 * User-level fraud probability
 * Performance metrics (latency, throughput, error rate)
 
-### **2. LLM-based interpretability**
+### 🤖 **2. LLM-based interpretability**
 
 * LLM-generated natural language explanations:
 
   * "This transaction was flagged because the distance is unusually high and IP is suspicious."
 * Possible integration: GPT, LLaMA, Mistral, DeepSeek
 
-### **3. Model variants**
+### 📊 **3. Model variants**
 
 * LightGBM
 * CatBoost
@@ -120,7 +130,7 @@ Send transaction metadata and receive fraud prediction.
 * Ensembles
 * A/B testing between models
 
-### **4. Deployment improvements**
+### 📡 **4. Deployment improvements**
 
 * Docker + Render/AWS ECS
 * Add Redis or Kafka for streaming
@@ -128,29 +138,36 @@ Send transaction metadata and receive fraud prediction.
 
 ---
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```
 Fraud-Detection-In-...
-├── app
+├── app/
 │   ├── __init__.py
 │   ├── main.py
 │   ├── model.py
 │   ├── schemas.py
 │   ├── utils.py
 │   └── templates/
-├── model
+│
+├── model/
 │   ├── fraud_xgb.pkl
 │   ├── scaler.pkl
 │   └── synthetic_fraud_dataset.csv
-├── train
+│
+├── train/
 │   └── train_model.py
+│
 ├── Dockerfile
 ├── Readme.txt
 └── requirements.txt
 ```
 
-## Local Development
+---
+
+## 🧪 Local Development
 
 ### Install dependencies
 
