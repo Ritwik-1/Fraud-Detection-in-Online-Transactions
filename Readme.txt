@@ -1,8 +1,6 @@
-#Realtime Fraud Flagger
+# Realtime Fraud Flagger
 
 **Realtime Fraud Flagger** is a simple, growing project that detects and flags potentially fraudulent transactions in real-time. The system uses an XGBoost model trained on historical online fraud transaction data and exposes a FastAPI endpoint so company systems can send transaction events and receive a fraud flag. This repo contains code, docs, and deployment recipes to run the model and a real-time monitoring dashboard.
-
----
 
 ---
 
