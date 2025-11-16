@@ -7,6 +7,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import roc_auc_score, classification_report
 from xgboost import XGBClassifier
 
+# I am changing this line 
+
 from imblearn.over_sampling import SMOTE
 
 data_path = "model/synthetic_fraud_dataset.csv"
